@@ -1,0 +1,258 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root {
+    --dark-gray: hsl(0, 0%, 63%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --very-dark-gray: hsl(0, 0%, 27%);
+}
+
+
+/* FIRSTPART */
+.firstpart {
+    display: flex;
+    width: 100%;
+}
+.bgandnav {
+    display: flex;
+    background-image: url("desktop-image-hero-3.jpg");
+    width: 60%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.logo {
+    width: 40px;
+    height: 10px;
+    margin: 50px;
+    margin-right: 20px;
+}
+ul {
+    display: flex;
+    margin: 45px;
+}
+li {
+    list-style: none;
+}
+.nav, .a {
+    text-decoration: none;
+    color: var(--white);
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+
+/* First Writeup */
+.firstwriteup {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    width: 40%;
+}
+h1 {
+    font-weight: 700;
+    font-family:'Courier New', Courier, monospace;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    font-size: 30px;
+    margin-left: 80px;
+}
+p {
+    font-size: 17px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--dark-gray);
+    width: 400px;
+    margin-bottom: 45px;
+    margin-left: 80px;
+}
+span {
+    letter-spacing: 7px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 80px;
+}
+.icona {
+    color: var(--black);
+    font-size: 12px;
+    margin-left: 0px;
+    margin-bottom: 45.5px;
+}
+
+/* ARROW */
+.bandf {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    background-color: var(--black);
+    height: 70px;
+    width: 25%;
+}
+.b {
+    width: 10%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.f {
+    width: 10%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+/* SECONDPART */
+.secondpart {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}
+.firstpic {
+    background-image: url("image-about-dark.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 30%;
+    height: 300px;
+}
+.secondwriteup {
+    text-align: start;
+    background-color: var(--white);
+    height: 300px;
+    width: 40%;
+}
+.writeup {
+    margin: 65px 65px;
+}
+.swu {
+    margin: 0px;
+}
+.secondpic {
+    background-image: url("image-about-light.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 30%;
+    height: 300px;
+}
+h2 {
+    margin-bottom: 15px;
+    letter-spacing: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    width: 100%;
+}
+.spanb {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--dark-gray);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* FOOTER */
+footer {
+    text-align: center;
+}
+.afooter {
+    color: var(--black);
+    text-decoration: none;
+    margin-left: 0;
+    font-size: 18px;
+}
+
+/* RESPONSIVE VIEW */
+@media only screen and (max-width: 500px) {
+    /* FIRST PART */
+    .firstpart {
+        flex-direction: column;
+    }
+
+    /* Background and Navigation */
+    .bgandnav {
+        background-image: url("mobile-image-hero-3.jpg");
+        width: 100%;
+    }
+    .logo {
+        /* width: 40px;
+        height: 10px;
+        margin: 50px;
+        margin-right: 20px; */
+    }
+    ul {
+        display: none;
+    }
+    /* First Writeup */
+    .firstwriteup {
+        width: 100%;
+    }
+    h1 {
+        margin-top: 70px;
+        margin-bottom: 20px;
+        margin-left: 25px;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    p {
+        font-size: 17px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: var(--dark-gray);
+        width: 330px;
+        margin-bottom: 60px;
+        margin-left: 25px;
+    }
+    span {
+        letter-spacing: 7px;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        margin-left: 25px;
+    }
+    .icona {
+        color: var(--black);
+        font-size: 12px;
+        margin-left: 0px;
+        margin-bottom: 46px;
+    }
+
+
+    /* SECOND PART */
+    .secondpart {
+        flex-direction: column;
+        width: 100%;
+    }
+    .firstpic {
+        background-size: 100% 100%;
+        width: 100%;
+    }
+    .secondwriteup {
+        text-align: start;
+        background-color: var(--white);
+        height: 400px;
+        width: 100%;
+    }
+    .writeup {
+        margin: 0px;
+        margin-top: 80px;
+        margin-left: 20px;
+    }
+    h2 {
+        margin-bottom: 15px;
+        font-size: 18px;
+        letter-spacing: 3px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 700;
+        width: 100%;
+    }
+    .secondpic {
+        width: 100%;
+    }
+
+
+
+    /* FOOTER */
+    .afooter {
+        font-size: smaller;
+    }
+}
